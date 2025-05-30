@@ -1,0 +1,2647 @@
+<html>
+
+<head>
+  <title>Plugin readings CELSIA</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+
+  <script src="main.min.js"></script>
+  <style type="text/css">
+    svg:not(:root).svg-inline--fa {
+      overflow: visible;
+    }
+
+    .svg-inline--fa {
+      display: inline-block;
+      font-size: inherit;
+      height: 1em;
+      overflow: visible;
+      vertical-align: -0.125em;
+    }
+
+    .svg-inline--fa.fa-lg {
+      vertical-align: -0.225em;
+    }
+
+    .svg-inline--fa.fa-w-1 {
+      width: 0.0625em;
+    }
+
+    .svg-inline--fa.fa-w-2 {
+      width: 0.125em;
+    }
+
+    .svg-inline--fa.fa-w-3 {
+      width: 0.1875em;
+    }
+
+    .svg-inline--fa.fa-w-4 {
+      width: 0.25em;
+    }
+
+    .svg-inline--fa.fa-w-5 {
+      width: 0.3125em;
+    }
+
+    .svg-inline--fa.fa-w-6 {
+      width: 0.375em;
+    }
+
+    .svg-inline--fa.fa-w-7 {
+      width: 0.4375em;
+    }
+
+    .svg-inline--fa.fa-w-8 {
+      width: 0.5em;
+    }
+
+    .svg-inline--fa.fa-w-9 {
+      width: 0.5625em;
+    }
+
+    .svg-inline--fa.fa-w-10 {
+      width: 0.625em;
+    }
+
+    .svg-inline--fa.fa-w-11 {
+      width: 0.6875em;
+    }
+
+    .svg-inline--fa.fa-w-12 {
+      width: 0.75em;
+    }
+
+    .svg-inline--fa.fa-w-13 {
+      width: 0.8125em;
+    }
+
+    .svg-inline--fa.fa-w-14 {
+      width: 0.875em;
+    }
+
+    .svg-inline--fa.fa-w-15 {
+      width: 0.9375em;
+    }
+
+    .svg-inline--fa.fa-w-16 {
+      width: 1em;
+    }
+
+    .svg-inline--fa.fa-w-17 {
+      width: 1.0625em;
+    }
+
+    .svg-inline--fa.fa-w-18 {
+      width: 1.125em;
+    }
+
+    .svg-inline--fa.fa-w-19 {
+      width: 1.1875em;
+    }
+
+    .svg-inline--fa.fa-w-20 {
+      width: 1.25em;
+    }
+
+    .svg-inline--fa.fa-pull-left {
+      margin-right: 0.3em;
+      width: auto;
+    }
+
+    .svg-inline--fa.fa-pull-right {
+      margin-left: 0.3em;
+      width: auto;
+    }
+
+    .svg-inline--fa.fa-border {
+      height: 1.5em;
+    }
+
+    .svg-inline--fa.fa-li {
+      width: 2em;
+    }
+
+    .svg-inline--fa.fa-fw {
+      width: 1.25em;
+    }
+
+    .fa-layers svg.svg-inline--fa {
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .fa-layers {
+      display: inline-block;
+      height: 1em;
+      position: relative;
+      text-align: center;
+      vertical-align: -0.125em;
+      width: 1em;
+    }
+
+    .fa-layers svg.svg-inline--fa {
+      -webkit-transform-origin: center center;
+      transform-origin: center center;
+    }
+
+    .fa-layers-counter,
+    .fa-layers-text {
+      display: inline-block;
+      position: absolute;
+      text-align: center;
+    }
+
+    .fa-layers-text {
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      -webkit-transform-origin: center center;
+      transform-origin: center center;
+    }
+
+    .fa-layers-counter {
+      background-color: #ff253a;
+      border-radius: 1em;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      color: #fff;
+      height: 1.5em;
+      line-height: 1;
+      max-width: 5em;
+      min-width: 1.5em;
+      overflow: hidden;
+      padding: 0.25em;
+      right: 0;
+      text-overflow: ellipsis;
+      top: 0;
+      -webkit-transform: scale(0.25);
+      transform: scale(0.25);
+      -webkit-transform-origin: top right;
+      transform-origin: top right;
+    }
+
+    .fa-layers-bottom-right {
+      bottom: 0;
+      right: 0;
+      top: auto;
+      -webkit-transform: scale(0.25);
+      transform: scale(0.25);
+      -webkit-transform-origin: bottom right;
+      transform-origin: bottom right;
+    }
+
+    .fa-layers-bottom-left {
+      bottom: 0;
+      left: 0;
+      right: auto;
+      top: auto;
+      -webkit-transform: scale(0.25);
+      transform: scale(0.25);
+      -webkit-transform-origin: bottom left;
+      transform-origin: bottom left;
+    }
+
+    .fa-layers-top-right {
+      right: 0;
+      top: 0;
+      -webkit-transform: scale(0.25);
+      transform: scale(0.25);
+      -webkit-transform-origin: top right;
+      transform-origin: top right;
+    }
+
+    .fa-layers-top-left {
+      left: 0;
+      right: auto;
+      top: 0;
+      -webkit-transform: scale(0.25);
+      transform: scale(0.25);
+      -webkit-transform-origin: top left;
+      transform-origin: top left;
+    }
+
+    .fa-lg {
+      font-size: 1.3333333333em;
+      line-height: 0.75em;
+      vertical-align: -0.0667em;
+    }
+
+    .fa-xs {
+      font-size: 0.75em;
+    }
+
+    .fa-sm {
+      font-size: 0.875em;
+    }
+
+    .fa-1x {
+      font-size: 1em;
+    }
+
+    .fa-2x {
+      font-size: 2em;
+    }
+
+    .fa-3x {
+      font-size: 3em;
+    }
+
+    .fa-4x {
+      font-size: 4em;
+    }
+
+    .fa-5x {
+      font-size: 5em;
+    }
+
+    .fa-6x {
+      font-size: 6em;
+    }
+
+    .fa-7x {
+      font-size: 7em;
+    }
+
+    .fa-8x {
+      font-size: 8em;
+    }
+
+    .fa-9x {
+      font-size: 9em;
+    }
+
+    .fa-10x {
+      font-size: 10em;
+    }
+
+    .fa-fw {
+      text-align: center;
+      width: 1.25em;
+    }
+
+    .fa-ul {
+      list-style-type: none;
+      margin-left: 2.5em;
+      padding-left: 0;
+    }
+
+    .fa-ul>li {
+      position: relative;
+    }
+
+    .fa-li {
+      left: -2em;
+      position: absolute;
+      text-align: center;
+      width: 2em;
+      line-height: inherit;
+    }
+
+    .fa-border {
+      border: solid 0.08em #eee;
+      border-radius: 0.1em;
+      padding: 0.2em 0.25em 0.15em;
+    }
+
+    .fa-pull-left {
+      float: left;
+    }
+
+    .fa-pull-right {
+      float: right;
+    }
+
+    .fa.fa-pull-left,
+    .fas.fa-pull-left,
+    .far.fa-pull-left,
+    .fal.fa-pull-left,
+    .fab.fa-pull-left {
+      margin-right: 0.3em;
+    }
+
+    .fa.fa-pull-right,
+    .fas.fa-pull-right,
+    .far.fa-pull-right,
+    .fal.fa-pull-right,
+    .fab.fa-pull-right {
+      margin-left: 0.3em;
+    }
+
+    .fa-spin {
+      -webkit-animation: fa-spin 2s infinite linear;
+      animation: fa-spin 2s infinite linear;
+    }
+
+    .fa-pulse {
+      -webkit-animation: fa-spin 1s infinite steps(8);
+      animation: fa-spin 1s infinite steps(8);
+    }
+
+    @-webkit-keyframes fa-spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes fa-spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+    .fa-rotate-90 {
+      -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg);
+    }
+
+    .fa-rotate-180 {
+      -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+
+    .fa-rotate-270 {
+      -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+      -webkit-transform: rotate(270deg);
+      transform: rotate(270deg);
+    }
+
+    .fa-flip-horizontal {
+      -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+      -webkit-transform: scale(-1, 1);
+      transform: scale(-1, 1);
+    }
+
+    .fa-flip-vertical {
+      -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+      -webkit-transform: scale(1, -1);
+      transform: scale(1, -1);
+    }
+
+    .fa-flip-both,
+    .fa-flip-horizontal.fa-flip-vertical {
+      -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+      -webkit-transform: scale(-1, -1);
+      transform: scale(-1, -1);
+    }
+
+    :root .fa-rotate-90,
+    :root .fa-rotate-180,
+    :root .fa-rotate-270,
+    :root .fa-flip-horizontal,
+    :root .fa-flip-vertical,
+    :root .fa-flip-both {
+      -webkit-filter: none;
+      filter: none;
+    }
+
+    .fa-stack {
+      display: inline-block;
+      height: 2em;
+      position: relative;
+      width: 2.5em;
+    }
+
+    .fa-stack-1x,
+    .fa-stack-2x {
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .svg-inline--fa.fa-stack-1x {
+      height: 1em;
+      width: 1.25em;
+    }
+
+    .svg-inline--fa.fa-stack-2x {
+      height: 2em;
+      width: 2.5em;
+    }
+
+    .fa-inverse {
+      color: #fff;
+    }
+
+    .sr-only {
+      border: 0;
+      clip: rect(0, 0, 0, 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+
+    .sr-only-focusable:active,
+    .sr-only-focusable:focus {
+      clip: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: static;
+      width: auto;
+    }
+
+    .svg-inline--fa .fa-primary {
+      fill: var(--fa-primary-color, currentColor);
+      opacity: 1;
+      opacity: var(--fa-primary-opacity, 1);
+    }
+
+    .svg-inline--fa .fa-secondary {
+      fill: var(--fa-secondary-color, currentColor);
+      opacity: 0.4;
+      opacity: var(--fa-secondary-opacity, 0.4);
+    }
+
+    .svg-inline--fa.fa-swap-opacity .fa-primary {
+      opacity: 0.4;
+      opacity: var(--fa-secondary-opacity, 0.4);
+    }
+
+    .svg-inline--fa.fa-swap-opacity .fa-secondary {
+      opacity: 1;
+      opacity: var(--fa-primary-opacity, 1);
+    }
+
+    .svg-inline--fa mask .fa-primary,
+    .svg-inline--fa mask .fa-secondary {
+      fill: black;
+    }
+
+    .fad.fa-inverse {
+      color: #fff;
+    }
+  </style>
+  <style type="text/css">
+    body,
+    html {
+      display: block
+    }
+
+    html {
+      height: 100%
+    }
+
+    body {
+      background: #000;
+      font-family: "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+      line-height: 1.5;
+      font-size: 16px;
+      margin: 0;
+      min-height: 100%;
+      color: #fff;
+      padding: 110px 0 0;
+      position: relative
+    }
+
+    a,
+    a:visited {
+      color: #145c9e;
+      cursor: pointer;
+      -webkit-user-select: none;
+      user-select: none
+    }
+
+    input[type=number] {
+      -moz-appearance: textfield
+    }
+
+    input::-webkit-inner-spin-button,
+    input::-webkit-outer-spin-button {
+      -webkit-appearance: none
+    }
+
+    .no-wrap {
+      white-space: nowrap
+    }
+
+    .field-row {
+      display: block;
+      margin-bottom: 8px
+    }
+
+    .field-title {
+      color: #979797;
+      width: 35%
+    }
+
+    .field-title:after {
+      content: ': ';
+      display: inline
+    }
+
+    .field-title,
+    .field-value {
+      display: inline-block;
+      vertical-align: top
+    }
+
+    .button {
+      display: inline-block;
+      border: 1px solid #c4ced7;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+      -webkit-user-select: none;
+      user-select: none;
+      padding: 8px 16px;
+      line-height: 24px;
+      font-size: 16px;
+      border-radius: 4px;
+      transition: border-color 200ms ease-in-out, background-color 200ms ease-in-out;
+      color: #252525;
+      background-color: #e7ebed;
+      box-sizing: border-box
+    }
+
+    .button-large.button-silver:active:not(.disabled),
+    .button-med.button-silver:active:not(.disabled),
+    .button.button-silver:active:not(.disabled) {
+      border-color: #c4ced7;
+      background-color: #c4ced7;
+      color: #c4ced7;
+      transition: none;
+      opacity: .4;
+      cursor: default
+    }
+
+    .button.button-green {
+      background-color: #ff812d;
+      border-color: #ff812d;
+      color: #fff
+    }
+
+    .button:focus:not(.disabled) {
+      outline: 0;
+      border-color: #fff
+    }
+
+    .button:active:not(.disabled) {
+      border-color: #515151;
+      background-color: #515151;
+      color: #fff;
+      transition: none
+    }
+
+    .button.disabled {
+      opacity: .4;
+      cursor: default
+    }
+
+    .button.float-aplicar {
+      position: fixed;
+      width: 90px;
+      height: 90px;
+      bottom: 40px;
+      right: 0;
+      color: #fff;
+      border-radius: 50px;
+      text-align: center;
+      box-shadow: 2px 2px 3px #999
+    }
+
+    .button.float-aplicar .my-float {
+      margin-top: 22px
+    }
+
+    .button-large {
+      display: inline-block;
+      border: 1px solid #c4ced7;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+      -webkit-user-select: none;
+      user-select: none;
+      padding: 8px 16px;
+      line-height: 24px;
+      font-size: 16px;
+      border-radius: 4px;
+      transition: border-color 200ms ease-in-out, background-color 200ms ease-in-out;
+      color: #252525;
+      background-color: #e7ebed;
+      box-sizing: border-box;
+      width: 100%
+    }
+
+    .button-bottom {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0
+    }
+
+    .button-submit {
+      background-color: #03567f;
+      border-color: #03567f;
+      color: #fff
+    }
+
+    .main-container {
+      height: 100%;
+      box-sizing: border-box;
+      padding: 0 8px 16px
+    }
+
+    .main-container.search-mode-visible-btn {
+      padding-top: 20px
+    }
+
+    .main-container.has-bottom-panel {
+      padding-bottom: 68px
+    }
+
+    .search-results {
+      padding: 0;
+      margin: 0
+    }
+
+    .search-input-wrapper {
+      background: #000;
+      padding: 16px 0;
+      transition: box-shadow 200ms ease-in-out
+    }
+
+    .search-mode .search-input-wrapper {
+      overflow: hidden;
+      position: fixed;
+      z-index: 100;
+      left: 0;
+      top: 0;
+      right: 0;
+      padding: 16px 8px
+    }
+
+    .bottom-panel.is-scrolled,
+    .search-mode .search-input-wrapper.is-scrolled {
+      box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .1), 0 0 0 1px rgba(0, 0, 0, .08)
+    }
+
+    .bottom-panel {
+      background: #000;
+      overflow: hidden;
+      position: fixed;
+      z-index: 101;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 42px;
+      padding: 8px
+    }
+
+    .bottom-panel .bottom-panel-inner {
+      max-width: 480px;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center
+    }
+
+    .bottom-panel .title {
+      padding: 8px 12px;
+      font-size: 14px;
+      text-align: center
+    }
+
+    .bottom-panel .numero-version {
+      padding: 4px;
+      font-size: 10px;
+      text-align: center;
+      color: #78797a
+    }
+
+    .bottom-panel-inner-2 {
+      display: flex
+    }
+
+    .search-input-block {
+      max-width: 480px;
+      width: 100%;
+      margin: 0 auto;
+      align-content: stretch;
+      display: flex
+    }
+
+    .search-input-block .text-input {
+      flex: 1 1 auto;
+      height: 36px
+    }
+
+    .search-input-block .text-input.with-button {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-right: 0 none
+    }
+
+    .search-input-block .button-barcode {
+      flex: 0 0 auto;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      height: 36px
+    }
+
+    .text-input {
+      padding: 8px;
+      line-height: 1.25;
+      border-radius: 4px;
+      background: #3a3b3d;
+      border: 1px solid #c4ced7;
+      transition: border-color 200ms ease-in-out, background-color 200ms ease-in-out;
+      box-sizing: border-box;
+      width: 100%;
+      font-size: 16px;
+      box-shadow: none;
+      color: #fff
+    }
+
+    .text-input:focus {
+      outline: 0;
+      border-color: #fff
+    }
+
+    .form-control {
+      display: block !important;
+      width: 100% !important;
+      padding: .375rem .75rem !important;
+      font-size: 1rem !important;
+      line-height: 1.5 !important;
+      color: #fff !important;
+      background-color: #3a3b3d !important;
+      background-clip: padding-box !important;
+      border: 1px solid #ced4da !important;
+      border-radius: .25rem !important;
+      transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out !important
+    }
+
+    .highlight {
+      background: #ffe188
+    }
+
+    .no-results {
+      padding: 20px 12px 8px;
+      text-align: center
+    }
+
+    .not-shown-results-number {
+      text-align: center;
+      padding: 8px 16px 16px
+    }
+
+    .last-completed-activity-title {
+      padding: 8px 12px;
+      font-size: 20px;
+      text-align: center
+    }
+
+    .last-completed-activity-title .info-meter-tot {
+      color: #e73900 !important
+    }
+
+    .recommended-activities-wrapper {
+      max-width: 480px;
+      margin: 8px auto
+    }
+
+    .recommended-activities-wrapper .recommended-activities-title {
+      padding: 8px 12px;
+      font-size: 20px;
+      text-align: center
+    }
+
+    .quantity-form-content {
+      display: block;
+      margin-bottom: 8px
+    }
+
+    .quantity-form-content .text-input {
+      display: block
+    }
+
+    .processing-overlay {
+      display: block;
+      position: absolute;
+      z-index: 10000;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 0 0
+    }
+
+    .button-med {
+      display: inline-block;
+      border: 1px solid #c4ced7;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+      -webkit-user-select: none;
+      user-select: none;
+      padding: 5px 4px;
+      line-height: 13px;
+      font-size: 12px;
+      border-radius: 4px;
+      transition: border-color 200ms ease-in-out, background-color 200ms ease-in-out;
+      color: #252525;
+      background-color: #e7ebed;
+      box-sizing: border-box
+    }
+
+    .button-med.button-green {
+      background-color: #ff812d;
+      border-color: #ff812d;
+      color: #fff
+    }
+
+    .button-med:focus:not(.disabled) {
+      outline: 0;
+      border-color: #fff
+    }
+
+    .button-med:active:not(.disabled) {
+      border-color: #515151;
+      background-color: #515151;
+      color: #fff;
+      transition: none
+    }
+
+    .button-med.disabled {
+      opacity: .4;
+      cursor: default
+    }
+
+    .div-order-option {
+      max-width: 480px;
+      margin: 8px auto;
+      display: flex;
+      font-size: 14px
+    }
+
+    .div-order-option .title {
+      padding: 8px 12px;
+      font-size: 20px;
+      text-align: center
+    }
+
+    .activity-block {
+      display: block;
+      border-radius: 4px;
+      width: 100%;
+      max-width: 480px;
+      margin: 0 auto 8px;
+      background: #3a3b3d;
+      border: 1px solid #c4ced7;
+      box-sizing: border-box;
+      overflow: hidden
+    }
+
+    .activity-block-header {
+      padding: 8px;
+      display: flex;
+      align-items: flex-start;
+      -webkit-user-select: none;
+      user-select: none;
+      cursor: pointer
+    }
+
+    .activity-block-header .activity-status,
+    .activity-block-header .activity-status-btn-closed {
+      padding: 4px 8px;
+      border-radius: 6px;
+      min-height: 34px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex: 0 0 auto;
+      text-align: center
+    }
+
+    .activity-block-header .activity-status.positive {
+      color: #f0fced;
+      background: #ff812d
+    }
+
+    .activity-block-header .activity-status.neutral {
+      color: #e6f7fc;
+      background: #78797a
+    }
+
+    .activity-block-header .activity-status.negative {
+      color: #fcf7e8;
+      background: #ed813e
+    }
+
+    .activity-block-header .activity-status.disabled {
+      color: #f0f0f0;
+      background: #a0a0a0
+    }
+
+    .activity-block-header .activity-status.btn-closed {
+      color: #f0f0f0;
+      background: #515151;
+      font-weight: 700
+    }
+
+    .activity-block-header .activity-status .status-text {
+      font-size: 14px;
+      text-transform: uppercase;
+      line-height: 18px;
+      flex: 0 0 auto
+    }
+
+    .activity-block-header .activity-status .status-details {
+      font-size: 14px;
+      line-height: 16px;
+      flex: 0 0 auto
+    }
+
+    .activity-block-header .activity-status .status-details-closed {
+      font-size: 14px;
+      line-height: 16px;
+      flex: 0 0 auto;
+      font-weight: 700
+    }
+
+    .activity-block-header .activity-status .status-text-med {
+      font-size: 12px;
+      text-transform: uppercase;
+      line-height: 18px;
+      flex: 0 0 auto
+    }
+
+    .activity-block-header .activity-status-btn-closed {
+      padding: 4px;
+      min-height: 20px
+    }
+
+    .activity-block-header .activity-status-btn-closed.positive {
+      color: #f0fced;
+      background: #81bb5f
+    }
+
+    .activity-block-header .activity-status-btn-closed.neutral {
+      color: #e6f7fc;
+      background: #13b6cf
+    }
+
+    .activity-block-header .activity-status-btn-closed.negative {
+      color: #fcf7e8;
+      background: #ed813e
+    }
+
+    .activity-block-header .activity-status-btn-closed.disabled {
+      color: #f0f0f0;
+      background: #a0a0a0
+    }
+
+    .activity-block-header .activity-status-btn-closed.btn-closed {
+      color: #f0f0f0;
+      background: #515151;
+      font-weight: 700
+    }
+
+    .activity-block-header .activity-status-btn-closed .status-text {
+      font-size: 14px;
+      text-transform: uppercase;
+      line-height: 18px;
+      flex: 0 0 auto
+    }
+
+    .activity-block-header .activity-status-btn-closed .status-details {
+      font-size: 14px;
+      line-height: 16px;
+      flex: 0 0 auto
+    }
+
+    .activity-block-header .activity-status-btn-closed .status-details-closed {
+      font-size: 14px;
+      line-height: 16px;
+      flex: 0 0 auto;
+      font-weight: 700
+    }
+
+    .activity-block-header .activity-status-btn-closed .status-text-med {
+      font-size: 12px;
+      text-transform: uppercase;
+      line-height: 18px;
+      flex: 0 0 auto
+    }
+
+    .activity-block-header:active {
+      background: #0572ce;
+      color: #fff
+    }
+
+    .activity-block-header:active .address,
+    .activity-block-header:active .subtitle {
+      color: #fff
+    }
+
+    .activity-block-header:active .address .address-bold {
+      font-weight: 700
+    }
+
+    .activity-block-header:active .highlight {
+      background: 0 0;
+      color: #fff
+    }
+
+    .activity-block-header:active .activity-status {
+      background: #fff !important;
+      color: #0572ce !important
+    }
+
+    .activity-block-title {
+      flex: 1 1 auto;
+      overflow: hidden
+    }
+
+    .activity-block-title .main-title {
+      display: block;
+      overflow: hidden;
+      line-height: 22px;
+      font-size: 14px;
+      text-overflow: ellipsis;
+      color: #fff
+    }
+
+    .activity-block-title .address {
+      display: block;
+      padding-right: 8px
+    }
+
+    .activity-block-title .address,
+    .activity-block-title .address-v2 {
+      overflow: hidden;
+      font-size: 14px;
+      line-height: 18px;
+      color: #ff812d
+    }
+
+    .activity-block-title .encuesta-description-text,
+    .activity-block-title .vermas-button {
+      overflow: hidden;
+      font-size: 14px;
+      line-height: 18px;
+      color: #fff
+    }
+
+    .activity-block-title .bold-title {
+      font-weight: 700
+    }
+
+    .encuesta-description-text-title {
+      padding: 8px 12px;
+      font-size: 20px;
+      text-align: center
+    }
+
+    .activity-block-edit-panel {
+      margin: 0 8px 8px
+    }
+
+    .activity-block-meter-reading-wrapper {
+      margin-top: 8px
+    }
+
+    .activity-block-meter-reading-wrapper .anomalia-error,
+    .activity-block-meter-reading-wrapper .meter-reading-error {
+      color: #fff;
+      background-color: #cf6679;
+      padding: 8px
+    }
+
+    .activity-block-actions {
+      display: flex;
+      margin: 8px 0 0
+    }
+
+    .activity-block-actions .left-side,
+    .activity-block-actions .right-side {
+      flex: 1 0 auto;
+      display: flex;
+      align-items: center
+    }
+
+    .activity-block-actions .left-side {
+      justify-content: flex-start;
+      text-align: left
+    }
+
+    .activity-block-actions .right-side {
+      justify-content: flex-end;
+      text-align: right
+    }
+
+    .activity-block-actions a,
+    .activity-block-not-expanded-actions a {
+      padding: 0 8px
+    }
+
+    .activity-block-actions .button {
+      padding: 16px 25px !important
+    }
+
+    .activity-block-actions .button-float {
+      padding: 16px !important
+    }
+
+    @media screen and (orientation:portrait) {
+      .cvid_container {
+        width: 100%;
+        height: 80%
+      }
+
+      .cgui_controls.active {
+        width: 100%;
+        height: 20%;
+        left: 0;
+        bottom: 58px
+      }
+
+      .cgui_controls.inactive {
+        display: none
+      }
+
+      .cswitchCameraButton {
+        left: calc(-12%);
+        top: calc(18%)
+      }
+
+      .ctoggleFullScreenButton {
+        left: calc(48%);
+        top: calc(18%)
+      }
+
+      .ccloseCameraButton {
+        left: calc(80%);
+        top: calc(18%)
+      }
+    }
+
+    @media screen and (orientation:landscape) {
+      .cvid_container {
+        width: 80%;
+        height: 100%
+      }
+
+      .cvid_container.left {
+        left: 20%
+      }
+
+      .cgui_controls.active {
+        width: 20%;
+        height: 100%;
+        right: 0;
+        bottom: 58px
+      }
+
+      .cgui_controls.inactive {
+        display: none
+      }
+
+      .cgui_controls.left {
+        left: 0
+      }
+
+      .cswitchCameraButton {
+        left: calc(18%);
+        top: calc(-14%)
+      }
+
+      .ctoggleFullScreenButton {
+        left: calc(18%);
+        top: calc(50%)
+      }
+
+      .ccloseCameraButton {
+        left: calc(50%);
+        top: calc(50%)
+      }
+    }
+
+    @media screen and (orientation:portrait) {
+      .cvid_container-foto1 {
+        width: 100%;
+        height: 80%
+      }
+
+      .cgui_controls-foto1.active {
+        width: 100%;
+        height: 20%;
+        left: 0;
+        bottom: 58px
+      }
+
+      .cgui_controls-foto1.inactive {
+        display: none
+      }
+
+      .cswitchCameraButton-foto1 {
+        left: calc(-12%);
+        top: calc(18%)
+      }
+
+      .ctoggleFullScreenButton-foto1 {
+        left: calc(48%);
+        top: calc(18%)
+      }
+
+      .ccloseCameraButton-foto1 {
+        left: calc(80%);
+        top: calc(18%)
+      }
+    }
+
+    @media screen and (orientation:landscape) {
+      .cvid_container-foto1 {
+        width: 80%;
+        height: 100%
+      }
+
+      .cvid_container-foto1.left {
+        left: 20%
+      }
+
+      .cgui_controls-foto1.active {
+        width: 20%;
+        height: 100%;
+        right: 0;
+        bottom: 58px
+      }
+
+      .cgui_controls-foto1.inactive {
+        display: none
+      }
+
+      .cgui_controls-foto1.left {
+        left: 0
+      }
+
+      .cswitchCameraButton-foto1 {
+        left: calc(18%);
+        top: calc(-14%)
+      }
+
+      .ctoggleFullScreenButton-foto1 {
+        left: calc(18%);
+        top: calc(50%)
+      }
+
+      .ccloseCameraButton-foto1 {
+        left: calc(50%);
+        top: calc(50%)
+      }
+    }
+
+    @media screen and (orientation:portrait) {
+      .cvid_container-foto2 {
+        width: 100%;
+        height: 80%
+      }
+
+      .cgui_controls-foto2.active {
+        width: 100%;
+        height: 20%;
+        left: 0;
+        bottom: 58px
+      }
+
+      .cgui_controls-foto2.inactive {
+        display: none
+      }
+
+      .cswitchCameraButton-foto2 {
+        left: calc(-12%);
+        top: calc(18%)
+      }
+
+      .ctoggleFullScreenButton-foto2 {
+        left: calc(48%);
+        top: calc(18%)
+      }
+
+      .ccloseCameraButton-foto2 {
+        left: calc(80%);
+        top: calc(18%)
+      }
+    }
+
+    @media screen and (orientation:portrait) {
+      .cvid_container-foto3 {
+        width: 100%;
+        height: 80%
+      }
+
+      .cgui_controls-foto3.active {
+        width: 100%;
+        height: 20%;
+        left: 0;
+        bottom: 58px
+      }
+
+      .cgui_controls-foto3.inactive {
+        display: none
+      }
+
+      .cswitchCameraButton-foto3 {
+        left: calc(-12%);
+        top: calc(18%)
+      }
+
+      .ctoggleFullScreenButton-foto3 {
+        left: calc(48%);
+        top: calc(18%)
+      }
+
+      .ccloseCameraButton-foto3 {
+        left: calc(80%);
+        top: calc(18%)
+      }
+    }
+
+    @media screen and (orientation:landscape) {
+      .cvid_container-foto3 {
+        width: 80%;
+        height: 100%
+      }
+
+      .cvid_container-foto3.left {
+        left: 20%
+      }
+
+      .cgui_controls-foto3.active {
+        width: 20%;
+        height: 100%;
+        right: 0;
+        bottom: 58px
+      }
+
+      .cgui_controls-foto3.inactive {
+        display: none
+      }
+
+      .cgui_controls-foto3.left {
+        left: 0
+      }
+
+      .cswitchCameraButton-foto3 {
+        left: calc(18%);
+        top: calc(-14%)
+      }
+
+      .ctoggleFullScreenButton-foto3 {
+        left: calc(18%);
+        top: calc(50%)
+      }
+
+      .ccloseCameraButton-foto3 {
+        left: calc(50%);
+        top: calc(50%)
+      }
+    }
+
+    .overlay__content video {
+      width: 100%;
+      height: 100%
+    }
+
+    .divGroupTakePhotoButton {
+      display: flex
+    }
+
+    .input-error {
+      outline: 1px solid red
+    }
+
+    .activity-block-not-expanded {
+      display: block;
+      border-radius: 4px;
+      width: 100%;
+      max-width: 480px;
+      margin: 0 auto 8px;
+      background: #fff;
+      border: 1px solid #c4ced7;
+      box-sizing: border-box;
+      overflow: hidden
+    }
+
+    .activity-block-not-expanded-header {
+      background: #3a3b3d
+    }
+
+    .activity-block-not-expanded-header .activity-status,
+    .activity-block-not-expanded-header .activity-status-btn-closed {
+      padding: 4px 8px;
+      border-radius: 6px;
+      min-height: 34px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex: 0 0 auto;
+      text-align: center
+    }
+
+    .activity-block-not-expanded-header .activity-status.positive {
+      color: #fff;
+      background: #ff812d
+    }
+
+    .activity-block-not-expanded-header .activity-status.neutral {
+      color: #e6f7fc;
+      background: #78797a
+    }
+
+    .activity-block-not-expanded-header .activity-status.negative {
+      color: #fcf7e8;
+      background: #ed813e
+    }
+
+    .activity-block-not-expanded-header .activity-status.disabled {
+      color: #f0f0f0;
+      background: #a0a0a0
+    }
+
+    .activity-block-not-expanded-header .activity-status .status-text {
+      font-size: 14px;
+      text-transform: uppercase;
+      line-height: 18px;
+      flex: 0 0 auto
+    }
+
+    .activity-block-not-expanded-header .activity-status .status-details {
+      font-size: 14px;
+      line-height: 16px;
+      flex: 0 0 auto
+    }
+
+    .activity-block-not-expanded-header .activity-status .status-details-closed {
+      font-size: 14px;
+      line-height: 16px;
+      flex: 0 0 auto;
+      font-weight: 700
+    }
+
+    .activity-block-not-expanded-header .activity-status-btn-closed {
+      padding: 4px;
+      min-height: 20px;
+      min-width: 20px
+    }
+
+    .activity-block-not-expanded-header .activity-status-btn-closed.positive {
+      color: #fff;
+      background: #81bb5f
+    }
+
+    .activity-block-not-expanded-header .activity-status-btn-closed.neutral {
+      color: #e6f7fc;
+      background: #13b6cf
+    }
+
+    .activity-block-not-expanded-header .activity-status-btn-closed.negative {
+      color: #fcf7e8;
+      background: #ed813e
+    }
+
+    .activity-block-not-expanded-header .activity-status-btn-closed.disabled {
+      color: #f0f0f0;
+      background: #a0a0a0
+    }
+
+    .activity-block-not-expanded-header .activity-status-btn-closed.btn-closed {
+      color: #f0f0f0;
+      background: #515151;
+      font-weight: 700
+    }
+
+    .activity-block-not-expanded-header .activity-status-btn-closed .status-text {
+      font-size: 14px;
+      text-transform: uppercase;
+      line-height: 18px;
+      flex: 0 0 auto
+    }
+
+    .activity-block-not-expanded-header .activity-status-btn-closed .status-details {
+      font-size: 14px;
+      line-height: 16px;
+      flex: 0 0 auto
+    }
+
+    .activity-block-not-expanded-header .activity-status-btn-closed .status-details-closed {
+      font-size: 14px;
+      line-height: 16px;
+      flex: 0 0 auto;
+      font-weight: 700
+    }
+
+    .activity-block-not-expanded-header .activity-status-btn-closed .status-text-med {
+      font-size: 12px;
+      text-transform: uppercase;
+      line-height: 18px;
+      flex: 0 0 auto
+    }
+
+    .activity-block-not-expanded-header:active {
+      background: #0572ce;
+      color: #fff
+    }
+
+    .activity-block-not-expanded-header:active .address,
+    .activity-block-not-expanded-header:active .subtitle {
+      color: #fff
+    }
+
+    .activity-block-not-expanded-header:active .highlight {
+      background: 0 0;
+      color: #fff
+    }
+
+    .activity-block-not-expanded-header:active .activity-status {
+      background: #fff !important;
+      color: #0572ce !important
+    }
+
+    .activity-block-not-expanded-header .bold-title {
+      font-weight: 700
+    }
+
+    .activity-block-expanded-header,
+    .activity-block-not-expanded-header {
+      padding: 8px;
+      display: flex;
+      align-items: flex-start;
+      -webkit-user-select: none;
+      user-select: none;
+      cursor: pointer
+    }
+
+    .activity-block-expanded-header .activity-status,
+    .activity-block-expanded-header .activity-status-btn-closed {
+      padding: 4px 8px;
+      border-radius: 6px;
+      min-height: 34px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex: 0 0 auto;
+      text-align: center
+    }
+
+    .activity-block-expanded-header .activity-status.positive {
+      color: #fff;
+      background: #81bb5f
+    }
+
+    .activity-block-expanded-header .activity-status.neutral {
+      color: #e6f7fc;
+      background: #13b6cf
+    }
+
+    .activity-block-expanded-header .activity-status.negative {
+      color: #fcf7e8;
+      background: #ed813e
+    }
+
+    .activity-block-expanded-header .activity-status.disabled {
+      color: #f0f0f0;
+      background: #a0a0a0
+    }
+
+    .activity-block-expanded-header .activity-status .status-text {
+      font-size: 14px;
+      text-transform: uppercase;
+      line-height: 18px;
+      flex: 0 0 auto
+    }
+
+    .activity-block-expanded-header .activity-status .status-details {
+      font-size: 14px;
+      line-height: 16px;
+      flex: 0 0 auto
+    }
+
+    .activity-block-expanded-header .activity-status .status-details-closed {
+      font-size: 14px;
+      line-height: 16px;
+      flex: 0 0 auto;
+      font-weight: 700
+    }
+
+    .activity-block-expanded-header .activity-status-btn-closed {
+      padding: 4px;
+      min-height: 20px;
+      min-width: 20px
+    }
+
+    .activity-block-expanded-header .activity-status-btn-closed.positive {
+      color: #fff;
+      background: #81bb5f
+    }
+
+    .activity-block-expanded-header .activity-status-btn-closed.neutral {
+      color: #e6f7fc;
+      background: #13b6cf
+    }
+
+    .activity-block-expanded-header .activity-status-btn-closed.negative {
+      color: #fcf7e8;
+      background: #ed813e
+    }
+
+    .activity-block-expanded-header .activity-status-btn-closed.disabled {
+      color: #f0f0f0;
+      background: #a0a0a0
+    }
+
+    .activity-block-expanded-header .activity-status-btn-closed.btn-closed {
+      color: #f0f0f0;
+      background: #515151;
+      font-weight: 700
+    }
+
+    .activity-block-expanded-header .activity-status-btn-closed .status-text {
+      font-size: 14px;
+      text-transform: uppercase;
+      line-height: 18px;
+      flex: 0 0 auto
+    }
+
+    .activity-block-expanded-header .activity-status-btn-closed .status-details {
+      font-size: 14px;
+      line-height: 16px;
+      flex: 0 0 auto
+    }
+
+    .activity-block-expanded-header .activity-status-btn-closed .status-details-closed {
+      font-size: 14px;
+      line-height: 16px;
+      flex: 0 0 auto;
+      font-weight: 700
+    }
+
+    .activity-block-expanded-header .activity-status-btn-closed .status-text-med {
+      font-size: 12px;
+      text-transform: uppercase;
+      line-height: 18px;
+      flex: 0 0 auto
+    }
+
+    .activity-block-expanded-header:active {
+      background: #0572ce;
+      color: #fff
+    }
+
+    .activity-block-expanded-header:active .address,
+    .activity-block-expanded-header:active .subtitle {
+      color: #fff
+    }
+
+    .activity-block-expanded-header:active .highlight {
+      background: 0 0;
+      color: #fff
+    }
+
+    .activity-block-expanded-header:active .activity-status {
+      background: #fff !important;
+      color: #0572ce !important
+    }
+
+    .activity-block-expanded-header .bold-title {
+      font-weight: 700
+    }
+
+    .activity-block-not-expanded-title {
+      flex: 1 1 auto;
+      overflow: hidden
+    }
+
+    .activity-block-not-expanded-title .main-title {
+      display: block;
+      overflow: hidden;
+      line-height: 22px;
+      font-size: 14px;
+      text-overflow: ellipsis;
+      color: #fff
+    }
+
+    .activity-block-not-expanded-title .address {
+      display: block;
+      padding-right: 8px
+    }
+
+    .activity-block-not-expanded-title .address,
+    .activity-block-not-expanded-title .address-v2 {
+      overflow: hidden;
+      font-size: 14px;
+      line-height: 18px;
+      color: #ff812d
+    }
+
+    .activity-block-not-expanded-title .vermas-button {
+      overflow: hidden;
+      font-size: 14px;
+      line-height: 18px;
+      color: #fff
+    }
+
+    .activity-block-not-expanded-title .bold-title {
+      font-weight: 700
+    }
+
+    .activity-block-not-expanded-edit-panel {
+      margin: 0 8px 8px
+    }
+
+    .activity-block-not-expanded-meter-reading-wrapper {
+      margin-top: 8px
+    }
+
+    .activity-block-not-expanded-meter-reading-wrapper .anomalia-error,
+    .activity-block-not-expanded-meter-reading-wrapper .meter-reading-error {
+      color: #fff;
+      background-color: #cf6679;
+      padding: 8px
+    }
+
+    .activity-block-not-expanded-actions {
+      display: flex;
+      margin: 8px 0 0
+    }
+
+    .activity-block-not-expanded-actions .left-side,
+    .activity-block-not-expanded-actions .right-side {
+      flex: 1 0 auto;
+      display: flex;
+      align-items: center
+    }
+
+    .activity-block-not-expanded-actions .left-side {
+      justify-content: flex-start;
+      text-align: left
+    }
+
+    .activity-block-not-expanded-actions .right-side {
+      justify-content: flex-end;
+      text-align: right
+    }
+
+    .activity-block-not-expanded-actions .button {
+      padding: 16px 25px !important
+    }
+
+    .container {
+      max-width: 750px;
+      padding: 15px
+    }
+
+    .anomalia-error,
+    .meter-reading-error {
+      color: #fff;
+      background-color: #cf6679;
+      padding: 8px
+    }
+
+    .anomalia-label {
+      color: #145c9e
+    }
+
+    .anomalia-add-anomaliaanomalia-add-anomalia {
+      color: #145c9e;
+      text-decoration: underline #145c9e
+    }
+
+    .camera,
+    .output {
+      width: 340px;
+      display: inline-block
+    }
+
+    .contentarea,
+    .startbutton {
+      font-family: "Lucida Grande", "Arial", sans-serif
+    }
+
+    .startbutton {
+      display: block;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      bottom: 32px;
+      background-color: rgba(0, 150, 0, .5);
+      border: 1px solid rgba(255, 255, 255, .7);
+      box-shadow: 0 0 1px 2px rgba(0, 0, 0, .2);
+      color: #fff;
+      font-size: 14px
+    }
+
+    .contentarea {
+      font-size: 16px;
+      width: 760px
+    }
+
+    .ccontainer-camera-v2 {
+      margin: 0;
+      padding: 0
+    }
+
+    .cvid_container {
+      position: fixed;
+      top: 0;
+      left: 0
+    }
+
+    .video-camera-v2 {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0
+    }
+
+    .cgui_controls,
+    .cvideo_overlay-v2 {
+      position: fixed;
+      background-color: #111;
+      z-index: 2;
+      bottom: 0
+    }
+
+    .cvideo_overlay-v2 {
+      display: none;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10
+    }
+
+    .button-camera-v2 {
+      outline: 0;
+      position: absolute;
+      color: #fff;
+      display: block;
+      opacity: 1;
+      background: 0 0;
+      border: solid 2px #fff;
+      padding: 0;
+      text-shadow: 0 0 4px #000;
+      background-position: center center;
+      background-repeat: no-repeat;
+      pointer-events: auto;
+      z-index: 2
+    }
+
+    .ctakePhotoButton,
+    .ctoggleFullScreenButton {
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, .5)
+    }
+
+    .ctakePhotoButton {
+      left: calc(38%);
+      top: calc(10%);
+      width: 80px;
+      height: 80px
+    }
+
+    .ctakePhotoButton:active {
+      background-color: #fff
+    }
+
+    .ctoggleFullScreenButton {
+      display: none;
+      width: 64px;
+      height: 64px
+    }
+
+    .ccloseCameraButton {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background-color: #fff
+    }
+
+    .ccloseCameraButton:active {
+      background-color: #000
+    }
+
+    .cswitchCameraButton {
+      display: none;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, .5)
+    }
+
+    @media screen and (orientation:portrait) {
+      .cvid_container {
+        width: 100%;
+        height: 80%
+      }
+
+      .cgui_controls.active {
+        width: 100%;
+        height: 20%;
+        left: 0;
+        bottom: 58px
+      }
+
+      .cgui_controls.inactive {
+        display: none
+      }
+
+      .cswitchCameraButton {
+        left: calc(-12%);
+        top: calc(18%)
+      }
+
+      .ctoggleFullScreenButton {
+        left: calc(48%);
+        top: calc(18%)
+      }
+
+      .ccloseCameraButton {
+        left: calc(80%);
+        top: calc(18%)
+      }
+    }
+
+    @media screen and (orientation:landscape) {
+      .cvid_container {
+        width: 80%;
+        height: 100%
+      }
+
+      .cvid_container.left {
+        left: 20%
+      }
+
+      .cgui_controls.active {
+        width: 20%;
+        height: 100%;
+        right: 0;
+        bottom: 58px
+      }
+
+      .cgui_controls.inactive {
+        display: none
+      }
+
+      .cgui_controls.left {
+        left: 0
+      }
+
+      .cswitchCameraButton {
+        left: calc(18%);
+        top: calc(-14%)
+      }
+
+      .ctoggleFullScreenButton {
+        left: calc(18%);
+        top: calc(50%)
+      }
+
+      .ccloseCameraButton {
+        left: calc(50%);
+        top: calc(50%)
+      }
+    }
+
+    .photo-v2.active {
+      border: 1px solid #000;
+      box-shadow: 2px 2px 3px #000;
+      width: 120px;
+      height: 120px
+    }
+
+    .canvas-v2.inactive,
+    .photo-v2.inactive {
+      display: none
+    }
+
+    .divStartTakePhotoButton {
+      width: 24px;
+      height: 24px
+    }
+
+    .divImage {
+      background: #3a3b3d
+    }
+
+    .ccontainer-camera-v2-foto1 {
+      margin: 0;
+      padding: 0
+    }
+
+    .cvid_container-foto1 {
+      position: fixed;
+      top: 0;
+      left: 0
+    }
+
+    .video-camera-v2-foto1 {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0
+    }
+
+    .cgui_controls-foto1,
+    .cvideo_overlay-v2-foto1 {
+      position: fixed;
+      background-color: #111;
+      z-index: 2;
+      bottom: 0
+    }
+
+    .cvideo_overlay-v2-foto1 {
+      display: none;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10
+    }
+
+    .button-camera-v2-foto1 {
+      outline: 0;
+      position: absolute;
+      color: #fff;
+      display: block;
+      opacity: 1;
+      background: 0 0;
+      border: solid 2px #fff;
+      padding: 0;
+      text-shadow: 0 0 4px #000;
+      background-position: center center;
+      background-repeat: no-repeat;
+      pointer-events: auto;
+      z-index: 2
+    }
+
+    .ctakePhotoButton-foto1 {
+      left: calc(38%);
+      top: calc(10%);
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, .5)
+    }
+
+    .ctakePhotoButton-foto1:active {
+      background-color: #fff
+    }
+
+    .ctoggleFullScreenButton-foto1 {
+      display: none;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, .5)
+    }
+
+    .ccloseCameraButton-foto1 {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background-color: #fff
+    }
+
+    .ccloseCameraButton-foto1:active {
+      background-color: #000
+    }
+
+    .cswitchCameraButton-foto1 {
+      display: none;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, .5)
+    }
+
+    @media screen and (orientation:portrait) {
+      .cvid_container-foto1 {
+        width: 100%;
+        height: 80%
+      }
+
+      .cgui_controls-foto1.active {
+        width: 100%;
+        height: 20%;
+        left: 0;
+        bottom: 58px
+      }
+
+      .cgui_controls-foto1.inactive {
+        display: none
+      }
+
+      .cswitchCameraButton-foto1 {
+        left: calc(-12%);
+        top: calc(18%)
+      }
+
+      .ctoggleFullScreenButton-foto1 {
+        left: calc(48%);
+        top: calc(18%)
+      }
+
+      .ccloseCameraButton-foto1 {
+        left: calc(80%);
+        top: calc(18%)
+      }
+    }
+
+    @media screen and (orientation:landscape) {
+      .cvid_container-foto1 {
+        width: 80%;
+        height: 100%
+      }
+
+      .cvid_container-foto1.left {
+        left: 20%
+      }
+
+      .cgui_controls-foto1.active {
+        width: 20%;
+        height: 100%;
+        right: 0;
+        bottom: 58px
+      }
+
+      .cgui_controls-foto1.inactive {
+        display: none
+      }
+
+      .cgui_controls-foto1.left {
+        left: 0
+      }
+
+      .cswitchCameraButton-foto1 {
+        left: calc(18%);
+        top: calc(-14%)
+      }
+
+      .ctoggleFullScreenButton-foto1 {
+        left: calc(18%);
+        top: calc(50%)
+      }
+
+      .ccloseCameraButton-foto1 {
+        left: calc(50%);
+        top: calc(50%)
+      }
+    }
+
+    .photo-v2-foto1.active {
+      border: 1px solid #000;
+      box-shadow: 2px 2px 3px #000;
+      width: 120px;
+      height: 120px
+    }
+
+    .canvas-v2-foto1.inactive,
+    .photo-v2-foto1.inactive {
+      display: none
+    }
+
+    .divStartTakePhotoButton-foto1 {
+      width: 24px;
+      height: 24px
+    }
+
+    .divImage-foto1 {
+      background: #3a3b3d
+    }
+
+    .ccontainer-camera-v2-foto2 {
+      margin: 0;
+      padding: 0
+    }
+
+    .cvid_container-foto2 {
+      position: fixed;
+      top: 0;
+      left: 0
+    }
+
+    .video-camera-v2-foto2 {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0
+    }
+
+    .cgui_controls-foto2,
+    .cvideo_overlay-v2-foto2 {
+      position: fixed;
+      background-color: #111;
+      z-index: 2;
+      bottom: 0
+    }
+
+    .cvideo_overlay-v2-foto2 {
+      display: none;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10
+    }
+
+    .button-camera-v2-foto2 {
+      outline: 0;
+      position: absolute;
+      color: #fff;
+      display: block;
+      opacity: 1;
+      background: 0 0;
+      border: solid 2px #fff;
+      padding: 0;
+      text-shadow: 0 0 4px #000;
+      background-position: center center;
+      background-repeat: no-repeat;
+      pointer-events: auto;
+      z-index: 2
+    }
+
+    .ctakePhotoButton-foto2 {
+      left: calc(38%);
+      top: calc(10%);
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, .5)
+    }
+
+    .ctakePhotoButton-foto2:active {
+      background-color: #fff
+    }
+
+    .ctoggleFullScreenButton-foto2 {
+      display: none;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, .5)
+    }
+
+    .ccloseCameraButton-foto2 {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background-color: #fff
+    }
+
+    .ccloseCameraButton-foto2:active {
+      background-color: #000
+    }
+
+    .cswitchCameraButton-foto2 {
+      display: none;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, .5)
+    }
+
+    @media screen and (orientation:portrait) {
+      .cvid_container-foto2 {
+        width: 100%;
+        height: 80%
+      }
+
+      .cgui_controls-foto2.active {
+        width: 100%;
+        height: 20%;
+        left: 0;
+        bottom: 58px
+      }
+
+      .cgui_controls-foto2.inactive {
+        display: none
+      }
+
+      .cswitchCameraButton-foto2 {
+        left: calc(-12%);
+        top: calc(18%)
+      }
+
+      .ctoggleFullScreenButton-foto2 {
+        left: calc(48%);
+        top: calc(18%)
+      }
+
+      .ccloseCameraButton-foto2 {
+        left: calc(80%);
+        top: calc(18%)
+      }
+    }
+
+    .photo-v2-foto2.active {
+      border: 1px solid #000;
+      box-shadow: 2px 2px 3px #000;
+      width: 120px;
+      height: 120px
+    }
+
+    .canvas-v2-foto2.inactive,
+    .photo-v2-foto2.inactive {
+      display: none
+    }
+
+    .divStartTakePhotoButton-foto2 {
+      width: 24px;
+      height: 24px
+    }
+
+    .divImage-foto2 {
+      background: #3a3b3d
+    }
+
+    .ccontainer-camera-v2-foto3 {
+      margin: 0;
+      padding: 0
+    }
+
+    .cvid_container-foto3 {
+      position: fixed;
+      top: 0;
+      left: 0
+    }
+
+    .video-camera-v2-foto3 {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0
+    }
+
+    .cgui_controls-foto3,
+    .cvideo_overlay-v2-foto3 {
+      position: fixed;
+      background-color: #111;
+      z-index: 2;
+      bottom: 0
+    }
+
+    .cvideo_overlay-v2-foto3 {
+      display: none;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10
+    }
+
+    .button-camera-v2-foto3 {
+      outline: 0;
+      position: absolute;
+      color: #fff;
+      display: block;
+      opacity: 1;
+      background: 0 0;
+      border: solid 2px #fff;
+      padding: 0;
+      text-shadow: 0 0 4px #000;
+      background-position: center center;
+      background-repeat: no-repeat;
+      pointer-events: auto;
+      z-index: 2
+    }
+
+    .ctakePhotoButton-foto3 {
+      left: calc(38%);
+      top: calc(10%);
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, .5)
+    }
+
+    .ctakePhotoButton-foto3:active {
+      background-color: #fff
+    }
+
+    .ctoggleFullScreenButton-foto3 {
+      display: none;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, .5)
+    }
+
+    .ccloseCameraButton-foto3 {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background-color: #fff
+    }
+
+    .ccloseCameraButton-foto3:active {
+      background-color: #000
+    }
+
+    .cswitchCameraButton-foto3 {
+      display: none;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, .5)
+    }
+
+    @media screen and (orientation:portrait) {
+      .cvid_container-foto3 {
+        width: 100%;
+        height: 80%
+      }
+
+      .cgui_controls-foto3.active {
+        width: 100%;
+        height: 20%;
+        left: 0;
+        bottom: 58px
+      }
+
+      .cgui_controls-foto3.inactive {
+        display: none
+      }
+
+      .cswitchCameraButton-foto3 {
+        left: calc(-12%);
+        top: calc(18%)
+      }
+
+      .ctoggleFullScreenButton-foto3 {
+        left: calc(48%);
+        top: calc(18%)
+      }
+
+      .ccloseCameraButton-foto3 {
+        left: calc(80%);
+        top: calc(18%)
+      }
+    }
+
+    @media screen and (orientation:landscape) {
+      .cvid_container-foto3 {
+        width: 80%;
+        height: 100%
+      }
+
+      .cvid_container-foto3.left {
+        left: 20%
+      }
+
+      .cgui_controls-foto3.active {
+        width: 20%;
+        height: 100%;
+        right: 0;
+        bottom: 58px
+      }
+
+      .cgui_controls-foto3.inactive {
+        display: none
+      }
+
+      .cgui_controls-foto3.left {
+        left: 0
+      }
+
+      .cswitchCameraButton-foto3 {
+        left: calc(18%);
+        top: calc(-14%)
+      }
+
+      .ctoggleFullScreenButton-foto3 {
+        left: calc(18%);
+        top: calc(50%)
+      }
+
+      .ccloseCameraButton-foto3 {
+        left: calc(50%);
+        top: calc(50%)
+      }
+    }
+
+    .photo-v2-foto3.active {
+      border: 1px solid #000;
+      box-shadow: 2px 2px 3px #000;
+      width: 120px;
+      height: 120px
+    }
+
+    .canvas-v2-foto3.inactive,
+    .photo-v2-foto3.inactive,
+    .scanner-container #barcode-scanner1 video.drawingBuffer,
+    .scanner-container canvas.drawingBuffer {
+      display: none
+    }
+
+    .divStartTakePhotoButton-foto3 {
+      width: 24px;
+      height: 24px
+    }
+
+    .divImage-foto3 {
+      background: #3a3b3d
+    }
+
+    .spacer {
+      padding: 10px
+    }
+
+    .scanner-container #barcode-scanner1 video,
+    .scanner-container canvas {
+      width: 100%;
+      height: auto
+    }
+
+    .icon-barcode {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHBhdGggZD0iTTAgNGg0djIwaC00ek02IDRoMnYyMGgtMnpNMTAgNGgydjIwaC0yek0xNiA0aDJ2MjBoLTJ6TTI0IDRoMnYyMGgtMnpNMzAgNGgydjIwaC0yek0yMCA0aDF2MjBoLTF6TTE0IDRoMXYyMGgtMXpNMjcgNGgxdjIwaC0xek0wIDI2aDJ2MmgtMnpNNiAyNmgydjJoLTJ6TTEwIDI2aDJ2MmgtMnpNMjAgMjZoMnYyaC0yek0zMCAyNmgydjJoLTJ6TTI0IDI2aDR2MmgtNHpNMTQgMjZoNHYyaC00eiI+PC9wYXRoPjwvc3ZnPg==)
+    }
+
+    .overlay {
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, .3)
+    }
+
+    .overlay__content {
+      top: 50%;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90%;
+      max-height: 90%;
+      max-width: 800px
+    }
+
+    .overlay__close {
+      position: absolute;
+      right: 0;
+      padding: .5rem;
+      width: 2rem;
+      height: 2rem;
+      line-height: 2rem;
+      text-align: center;
+      background-color: #fff;
+      cursor: pointer;
+      border: 3px solid #000;
+      font-size: 1.5rem;
+      margin: -1rem;
+      border-radius: 2rem;
+      z-index: 100;
+      box-sizing: content-box
+    }
+
+    .overlay__content canvas {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0
+    }
+  </style>
+</head>
+
+<body>
+
+</body>
+
+</html>
